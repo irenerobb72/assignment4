@@ -31,7 +31,6 @@ console.log(countValues('aeiou'))
 console.log(countValues('aaaaaaaaaaa'))
 
 
-
 function byVowelCount (array) {
     return array.sort()
 }

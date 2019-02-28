@@ -1,3 +1,5 @@
+    
+    //THIS ONE IS FINISHED
     function isVowel (value) {
         const VOWELS = ['a','e','i','o','u'];
         // if the value is a single letter string and a vowel
@@ -8,6 +10,7 @@
     console.log(isVowel('basd'))
     console.log(isVowel(2))
 
+    // THIS ONE IS FINISHED
     function countVowels (value) {
         return value.split('').filter(isVowel);
         // possibly add a .dot length at the end?
@@ -18,25 +21,30 @@
     console.log(countVowels('aeiou'))
     console.log(countVowels('aaaaaaaaaaa'))
 
-
+    //THIS ONE IS NOT FINISHED
+    //instructions for byVowelCount: Review the expected behavior of the callback 
+    //passed to the sort() method of the Array object and write a 
+    //suitable callback named byVowelCount that will allow you to 
+    //sort the following array in ascending order by the number of 
+    //vowels each element contains:
 
     function byVowelCount (array) {
         // compare 2 strings, if string has more vowels sort it first
         return array.sort((a,b) => countVowels(a) > countVowels(b));
 
     }
-    // console.log(byVowelCount([
-    //     "aardvark",
-    //     "orangutan",
-    //     "chinchilla",
-    //     "pika",
-    //     "mongoose",
-    //     "komodo",
-    //     "pangolin",
-    //     "emu",
-    //     "penguin",
-    //     "narwhal",
-    //     "manatee"]))
+    console.log(byVowelCount([
+        "aardvark",
+        "orangutan",
+        "chinchilla",
+        "pika",
+        "mongoose",
+        "komodo",
+        "pangolin",
+        "emu",
+        "penguin",
+        "narwhal",
+        "manatee"]))
 
 
     // closuress
@@ -50,6 +58,7 @@
         }
     }());
     
+
     console.log(nextFibonacci())
     console.log(nextFibonacci())
     console.log(nextFibonacci())
@@ -61,18 +70,15 @@
     console.log(nextFibonacci())
     console.log(nextFibonacci())
     
-    
-    // function runningAverage(value) {
-    //     if (isNaN(value)) {
-    //          this.count = 0
-    //          this.sum = 0
-    //          return NaN
-    //     } 
-    //     // if this has not been called set it to 0 
-    //     this.count = (this.count || 0) + 1
-    //     this.sum = (this.sum || 0) + value
-    //     return sum/count
-    // }
+    //THIS ONE IS NOT FINISHED: 
+    // (5 points) Copy the runningAverage function you wrote in the 
+    //“Simple functions” section above into your closures.js file. 
+    //Use techniques similar to those used in the nextFibonacci function 
+    // to write another version of the runningAverage function named 
+    // runningAverage2 so that it works without explicitly creating 
+    // any properties of the function object. Test the runningAverage2 
+    //function carefully to ensure it functions in a manner identical 
+    //to the original runningAverage function.
     
     const runningAverage2 = (function (value) {
         console.log(value)

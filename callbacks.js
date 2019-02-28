@@ -6,20 +6,11 @@
         return value.length === 1 && VOWELS.includes(value) 
     }
 
-    console.log(isVowel('a'))
-    console.log(isVowel('basd'))
-    console.log(isVowel(2))
-
     // THIS ONE IS FINISHED
     function countVowels (value) {
         return value.split('').filter(isVowel);
         // possibly add a .dot length at the end?
     }
-
-    console.log(countVowels('asdsdgoek'))
-    console.log(countVowels('abcdefghijklmnopqrstuvwxyz'))
-    console.log(countVowels('aeiou'))
-    console.log(countVowels('aaaaaaaaaaa'))
 
     //THIS ONE IS NOT FINISHED
     //instructions for byVowelCount: Review the expected behavior of the callback 

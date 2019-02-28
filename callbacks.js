@@ -47,7 +47,7 @@
         "manatee"]))
 
 
-    // closuress
+    // THIS ONE IS GIVEN BY PROFESSOR
     const nextFibonacci = (function () {
         let x = 1, y = 1;
         return function () {
@@ -79,7 +79,7 @@
     // any properties of the function object. Test the runningAverage2 
     //function carefully to ensure it functions in a manner identical 
     //to the original runningAverage function.
-    
+
     const runningAverage2 = (function (value) {
         console.log(value)
         return function(value) {
